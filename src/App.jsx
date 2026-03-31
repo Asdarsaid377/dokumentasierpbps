@@ -53,6 +53,7 @@ import SalesCRM from "./pages/tutorial/erpnext-crm-sales";
 import InputSPKDetail from "./pages/tutorial/spk-input-guide-detail";
 import FlowAlatBerat from "./pages/tutorial/sewa-alat-berat-erpnext";
 import AlatBeratGuide from "./pages/tutorial/alat-berat-overrun-guide";
+import PengadaanFlowchart from "./pages/tutorial/PengadaanFlowchart";
 
 function App() {
 	const [activePage, setActivePage] = useState("kebutuhan");
@@ -71,6 +72,7 @@ function App() {
 		spk: <InputSPKDetail />,
 		alatberat: <FlowAlatBerat />,
 		alatberatguide: <AlatBeratGuide />,
+		alur: <PengadaanFlowchart />,
 	};
 
 	const MenuItem = ({ id, label }) => (
@@ -96,6 +98,7 @@ function App() {
 				<div className="menu-group">
 					<p className="menu-title">TUTORIAL</p>
 					<MenuItem id="projectsetup" label="Project Setup" />
+					<MenuItem id="alur" label="Alur Pengadaan" />
 					<MenuItem id="procurement" label="Procurement/Pengadaan PO" />
 					<MenuItem id="barang" label="Barang & Gudang" />
 					<MenuItem id="keuangan" label="Keuangan" />
